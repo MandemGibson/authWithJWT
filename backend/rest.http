@@ -1,0 +1,26 @@
+###
+POST http://localhost:8000/api/v1/auth/signin
+Content-Type: application/json
+
+{
+    "username": "mandemgibby",
+    "password": "test1234"
+}
+
+###
+POST http://localhost:8000/api/v1/auth/signup
+Content-Type: application/json
+
+{
+    "username": "mandemgibby",
+    "email": "gibby@example.com",
+    "password": "test1234",
+    "confirmPassword": "test1234"
+}
+
+###
+POST http://localhost:8000/api/v1/auth/signout
+
+###
+GET http://localhost:8000/api/v1/auth/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTcyOTEwNTY4OCwiZXhwIjoxNzI5MTA1ODA4fQ.jGyj4dsKsUmfSQEfSLDscvzgiT-grY6b9FR5_28uOYo.eyJ1c2VySWQiOjMsImlhdCI6MTcyOTEwNDk5NCwiZXhwIjoxNzI5MTA1MTE0fQ.5vCZV9amn9zEXRcbV6z1jg-DXIZF-7EOGPxHMUDr4a8
